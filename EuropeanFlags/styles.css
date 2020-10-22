@@ -1,0 +1,25 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+span {
+    width: 200px;
+    height: 200px;
+}
+
+.green {
+    background-color: green;
+}
+
+.white {
+    background-color: white;
+}
+
+.red {
+    background-color: red;
+}
+
+.inline {
+    display: inline-block;
+}
