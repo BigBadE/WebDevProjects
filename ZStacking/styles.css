@@ -1,0 +1,37 @@
+.box {
+    width: 100px;
+    height: 100px;
+    border: black 1px solid;
+    position: relative;
+}
+
+.divider {
+    height: 175px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.top {
+    z-index: 1;
+}
+
+.middle {
+    top: -66px;
+    left: 33px;
+}
+
+.bottom {
+    z-index: -1;
+    top: -132px;
+    left: 66px;
+}
