@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v4.1.1">
+	<title>Pricing example · Bootstrap</title>
+	
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/pricing/">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/4.5/jquery.min.js"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5/js/bootstrap.min.js"></script>
+	
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="manifest" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/manifest.json">
+	<link rel="mask-icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+	<link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon.ico">
+	<meta name="msapplication-config" content="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/assets/img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#563d7c">
+	
+	<!-- Custom styles for this template -->
+	<link href="pricing.css" rel="stylesheet">
+	<script>try {
+		Object.defineProperty(screen, "availTop", { value: 0 });
+	} catch (e) {}
+	try {
+		Object.defineProperty(screen, "availLeft", { value: 0 });
+	} catch (e) {}
+	try {
+		Object.defineProperty(screen, "availWidth", { value: 1920 });
+	} catch (e) {}
+	try {
+		Object.defineProperty(screen, "availHeight", { value: 1080 });
+	} catch (e) {}
+	try {
+		Object.defineProperty(screen, "colorDepth", { value: 24 });
+	} catch (e) {}
+	try {
+		Object.defineProperty(screen, "pixelDepth", { value: 24 });
+	} catch (e) {}
+	try {
+		Object.defineProperty(navigator, "keyboard", { value: undefined });
+	} catch (e) {}
+	try {
+		Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
+	} catch (e) {}
+	try {
+		Object.defineProperty(navigator, "deviceMemory", { value: 8 });
+	} catch (e) {}
+	try {
+		Object.defineProperty(navigator, "webkitTemporaryStorage", { value: undefined });
+	} catch (e) {}
+	try {
+		Object.defineProperty(navigator, "webkitPersistentStorage", { value: undefined });
+	} catch (e) {}
+	try {
+		Object.defineProperty(navigator, "appVersion", { value: "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" });
+	} catch (e) {}
+	try {
+		Object.defineProperty(navigator, "doNotTrack", { value: null });
+	} catch (e) {}
+	
+	navigator.getBattery = function getBattery () {
+		let battery = {"charging":true,"chargingTime":0,"dischargingTime":null,"level":1}
+		
+		try {
+			Object.defineProperty(battery, 'onchargingchange', {
+				enumerable: true,
+				configurable: false,
+				writable: false,
+				value: undefined
+			})
+		} catch (e) {}
+		
+		try {
+			Object.defineProperty(battery, 'onchargingtimechange', {
+				enumerable: true,
+				configurable: false,
+				writable: false,
+				value: undefined
+			})
+		} catch (e) {}
+		
+		try {
+			Object.defineProperty(battery, 'ondischargingtimechange', {
+				enumerable: true,
+				configurable: false,
+				writable: false,
+				value: undefined
+			})
+		} catch (e) {}
+		
+		try {
+			Object.defineProperty(battery, 'onlevelchange', {
+				enumerable: true,
+				configurable: false,
+				writable: false,
+				value: undefined
+			})
+		} catch (e) {}
+		
+		battery.addEventListener = function addEventListener () {}
+		
+		return Promise.resolve(battery)
+	}
+	
+	try {
+		window.screenY = 0
+	} catch (e) { }
+	
+	try {
+		window.screenTop = 0
+	} catch (e) { }
+	
+	try {
+		window.top.window.outerHeight = window.screen.height
+	} catch (e) { }
+	
+	try {
+		window.screenX = 0
+	} catch (e) { }
+	
+	try {
+		window.screenLeft = 0
+	} catch (e) { }
+	
+	try {
+		window.top.window.outerWidth = window.screen.width
+	} catch (e) { }
+	</script></head>
+<body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+	<h5 class="my-0 mr-md-auto font-weight-normal">Ethan Menell</h5>
+	<nav class="my-2 my-md-0 mr-md-3">
+		<a class="p-2 text-dark" href="#">Features</a>
+		<a class="p-2 text-dark" href="#">Support</a>
+		<a class="p-2 text-dark" href="#">Support</a>
+		<a class="p-2 text-dark" href="#">Pricing</a>
+	</nav>
+	<a class="btn btn-outline-primary" href="#">Sign up</a>
+</div>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+	<h1 class="display-4">Give me money</h1>
+	<p class="lead">It's quick, easy, and not free. Give me money.</p>
+</div>
+
+<div class="container">
+	<div class="card-deck mb-3 text-center">
+		<div class="card mb-4 shadow-sm">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Pro But Better</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>You get nothing</li>
+					<li>It's just a donation</li>
+					<li>No unsubscribing</li>
+					<li>No refunds</li>
+				</ul>
+				<button type="button" class="btn darkblue btn-lg btn-block btn-primary">Contact me</button>
+			</div>
+		</div>
+		<div class="card mb-4">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Pro</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>Still get nothing</li>
+					<li>Still a donation</li>
+					<li>No unsubscribing</li>
+					<li>No refunds</li>
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+			</div>
+		</div>
+		<div class="card mb-4">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Free</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>Doesn't help me at all</li>
+					<li>Why would you do this</li>
+					<li>Literally useless</li>
+					<li>Click to the right</li>
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-outline-primary">Don't click here</button>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="pt-4 my-md-5 pt-md-5 border-top">
+		<div class="row">
+			<div class="col-12 col-md">
+				<img class="mb-2" src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+				<small class="d-block mb-3 text-muted">© 2017-2020</small>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Features</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="#">Cool stuff</a></li>
+					<li><a class="text-muted" href="#">Don't click</a></li>
+					<li><a class="text-muted" href="#">Pros are cool</a></li>
+					<li><a class="text-muted" href="#">Stuff for donors</a></li>
+					<li><a class="text-muted" href="#">List of donors</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Resources</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="#">Resource</a></li>
+					<li><a class="text-muted" href="#">Resource name</a></li>
+					<li><a class="text-muted" href="#">Another resource</a></li>
+					<li><a class="text-muted" href="#">Final resource</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>About</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="#">Team (Just Me)</a></li>
+					<li><a class="text-muted" href="#">Location (Creep)</a></li>
+					<li><a class="text-muted" href="#">Donate Here</a></li>
+					<li><a class="text-muted" href="#">Terms</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+
+
+</body></html>
