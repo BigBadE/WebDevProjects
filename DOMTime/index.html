@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="main" lang="">
+<head>
+	<meta charset="utf-8">
+	<title>DOM Time!</title>
+</head>
+
+<body>
+	<button id="MagicBox" style="margin-left: 50vw;margin-top: 50vh;border: 2px solid black;transform: translate(-100%, -50%)">
+		Click Me!
+	</button>
+<script type="application/javascript">
+	let button = document.getElementById("MagicBox");
+	button.onclick = () => {
+		button.style.marginLeft = Math.random()*100 + "vw";
+		button.style.marginTop = Math.random()*100 + "vh";
+		button.textContent = "Too slow!";
+	}
+</script>
+</body>
+</html>
