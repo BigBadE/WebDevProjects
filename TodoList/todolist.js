@@ -39,13 +39,17 @@ function addTodoItem() {
         todoText.placeholder = todoPlaceholders[Math.floor(Math.random() * todoPlaceholders.length)]
     }
     todoItem.appendChild(todoItemText)
-    todoItem.appendChild(createButton("todo-item-delete", "✕", () => todoList.removeChild(todoItem)))
-    todoItem.appendChild(createButton("todo-item-move-up", "▲", () => {
+    let buttonBox = createElement("div", "todo-buttons")
+    todoItem.appendChild(buttonBox)
+    buttonBox.appendChild(createButton("todo-item-delete", "✕", () => todoList.removeChild(todoItem)))
+    let moveButtons = createElement("div", "todo-move-buttons")
+    buttonBox.appendChild(moveButtons)
+    moveButtons.appendChild(createButton("todo-item-move-up", "▲", () => {
         if(todoItem.previousElementSibling != null) {
             todoList.insertBefore(todoItem, todoItem.previousElementSibling)
         }
     }))
-    todoItem.appendChild(createButton("todo-item-move-down", "▼", () => {
+    moveButtons.appendChild(createButton("todo-item-move-down", "▼", () => {
         if(todoItem.nextElementSibling != null) {
             if(todoItem.nextElementSibling.nextElementSibling != null) {
                 todoList.insertBefore(todoItem, todoItem.nextElementSibling.nextElementSibling)

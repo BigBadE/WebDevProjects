@@ -1,3 +1,54 @@
+body {
+    background-color: lightblue;
+}
+
+#todo {
+    background-color: white;
+    width: 25%;
+    margin: auto;
+}
+
+.padding {
+    height: 3%;
+}
+
+#todo-input {
+    padding: 3% 3% 3% 3%;
+    display: flex;
+}
+
 #todo-text {
-    color: black;
+    width: 90%;
+}
+
+#todo-submit {
+    width: 10%;
+}
+
+.todo-item-delete {
+    color: red;
+}
+
+.todo-item {
+    padding: 3% 3% 3% 3%;
+    display: flex;
+}
+
+.todo-item-name {
+    width: 80%;
+}
+
+.todo-buttons {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.todo-item-move-up {
+    width: 50%;
+}
+
+.todo-item-move-down {
+    width: 50%;
 }
